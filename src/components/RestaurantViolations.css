@@ -1,0 +1,198 @@
+/* RestaurantViolations.css */
+
+#root {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+    line-height: 1.5;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #1A3636;
+    margin: 0;
+    min-width: 320px;
+    display: flex;
+    min-height: auto;
+    /* Remove display: flex and min-height */
+}
+
+a {
+    font-weight: 1000;
+    color: #1A3636;
+    text-decoration: inherit;
+  }
+
+
+  
+  /* Container and Layout */
+  .min-h-screen {
+    background-color: #f7f7f7;
+  }
+  
+  .max-w-7xl {
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* Header Styles */
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-4xl {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #1A3636;
+  }
+  
+  .text-2xl {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #40534C;
+  }
+  
+  .text-lg {
+    font-size: 1.125rem;
+    color: #677D6A;
+  }
+  
+  /* Button Styles */
+  button {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Smoother easing function */
+    margin: 0.5rem; /* Adds gaps between buttons */
+    padding: 0.75rem 1.5rem; /* Larger padding for better clickability */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 1rem;
+    font-weight: 500;
+    border: 2px solid transparent;
+    cursor: pointer;
+    font-family: inherit;
+
+  }
+  
+  button:hover {
+    transform: scale(1.1); /* Makes buttons 10% larger on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+    border-color: #1A3636;
+  }
+  
+  .bg-blue-600 {
+    background-color: #1A3636;
+    color: #ffffff; /* White text for contrast */
+  }
+  
+  .bg-blue-600:hover {
+    background-color: #40534C;
+  }
+  
+  .bg-white {
+    background-color: #ffffff;
+    color: #1A3636; /* Dark text for contrast */
+  }
+  
+  .bg-white:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* County Buttons Fix */
+  .county-button {
+    background-color: #1A3636; /* Dark green for consistency */
+    color: #ffffff; /* White text for contrast */
+    border: 2px solid transparent; /* Adds a border for better visibility */
+  }
+  
+  .county-button:hover {
+    background-color: #40534C; /* Slightly lighter green on hover */
+    border-color: #D6BD98; /* Accent color for border */
+  }
+  
+  /* Dropdown and Textbox Styles */
+  select, input[type="text"] {
+    width: 100%;
+    max-width: 400px; /* Makes dropdown and textbox larger */
+    padding: 12px; /* Increases padding for better size */
+    border-radius: 12px; /* More rounded corners */
+    border: 2px solid #D6BD98; /* Accent color for border */
+    font-size: 1rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Smoother transition */
+  }
+  
+  select:focus, input[type="text"]:focus {
+    border-color: #40534C; /* Changes border color on focus */
+    outline: none; /* Removes default outline */
+    box-shadow: 0 0 8px rgba(64, 83, 76, 0.3); /* Adds a subtle glow effect */
+  }
+  
+  /* Table Styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem; /* Adds spacing above the table */
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #1A3636;
+    color: #ffffff;
+    font-weight: 600;
+  }
+  
+  tr:hover {
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease-in-out; /* Smooth hover effect for rows */
+  }
+  
+  /* Footer Styles */
+  footer {
+    margin-top: 2rem;
+    padding: 1rem 0;
+    background-color: #1A3636;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  footer a {
+    color: #D6BD98;
+    text-decoration: none; /* Removes underline */
+    transition: color 0.3s ease-in-out; /* Smooth color transition for links */
+  }
+  
+  footer a:hover {
+    color: #ffffff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #root {
+        padding: 0.5rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    body {
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    /* Make table container scrollable horizontally */
+    .table-container {
+        overflow-x: auto;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+  
