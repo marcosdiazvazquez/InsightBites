@@ -52,7 +52,7 @@ InsightBites transforms Delaware's restaurant health inspection data into an acc
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/InsightBites.git
+   git clone https://github.com/marcosdiazvazquez/InsightBites.git
    cd InsightBites
    ```
 2. **Install dependencies**
