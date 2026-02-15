@@ -78,7 +78,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Acknowledgments
 
 - Delaware Open Data for providing the API
-- [Dhruv Patel](https://github.com/rkdhruv) for working on AR-DE with me
+- [Dhruv Patel](https://github.com/rkdhruv) for working on accountable restaurants de with me
 
 ## Contact
 For any queries regarding this project, please reach out to Marcos through mdv@udel.edu
