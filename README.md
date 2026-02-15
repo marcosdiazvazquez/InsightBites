@@ -9,7 +9,7 @@
 
 InsightBites transforms Delaware's restaurant health inspection data into an accessible, user-friendly web application. Born from a University of Delaware HenHacks 2024 project, this tool empowers Delaware residents to make informed dining choices by providing transparent access to health code violations across the state.
 
-[Live Demo](#https://insightbites.vercel.app/) | [API Documentation](https://data.delaware.gov/Health/Restaurant-Inspection-Violations/384s-wygj/about_data)
+[Live Demo](https://insightbites.vercel.app/) | [API Documentation](https://data.delaware.gov/Health/Restaurant-Inspection-Violations/384s-wygj/about_data)
 
 ![InsightBites Screenshot](./assets/InsightBites.png)
 
