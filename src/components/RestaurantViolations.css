@@ -123,6 +123,7 @@ a {
     border-radius: 12px; /* More rounded corners */
     border: 2px solid #D6BD98; /* Accent color for border */
     font-size: 1rem;
+    box-sizing: border-box;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Smoother transition */
   }
   
@@ -135,24 +136,28 @@ a {
   /* Table Styles */
   table {
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 1rem; /* Adds spacing above the table */
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 1rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
-  
+
   th, td {
     padding: 12px;
     text-align: left;
   }
-  
+
   th {
     background-color: #1A3636;
     color: #ffffff;
     font-weight: 600;
   }
-  
+
   tr:hover {
     background-color: #f0f0f0;
-    transition: background-color 0.3s ease-in-out; /* Smooth hover effect for rows */
+    transition: background-color 0.3s ease-in-out;
   }
   
   /* Footer Styles */
@@ -174,6 +179,21 @@ a {
     color: #ffffff;
   }
   
+  /* No results message */
+  .no-results {
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+
+  /* Responsive show/hide */
+  .mobile-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: block;
+  }
+
   /* Responsive Design */
   @media (max-width: 768px) {
     #root {
@@ -183,16 +203,79 @@ a {
     }
 
     body {
-        overflow-x: hidden; /* Prevent horizontal scrolling */
+        overflow-x: hidden;
     }
 
-    /* Make table container scrollable horizontally */
-    .table-container {
-        overflow-x: auto;
-        width: 100%;
-        margin: 0;
-        padding: 0;
+    .desktop-only {
+        display: none;
     }
-}
+
+    .mobile-only {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+  }
+
+  /* Mobile Card Styles */
+  .violation-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #1A3636;
+    text-align: left;
+  }
+
+  .violation-card-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1A3636;
+    margin: 0 0 0.25rem;
+  }
+
+  .violation-card-address {
+    font-size: 0.85rem;
+    color: #677D6A;
+    margin: 0 0 0.5rem;
+  }
+
+  .violation-card-details {
+    font-size: 0.85rem;
+    color: #40534C;
+    margin-bottom: 0.25rem;
+  }
+
+  .violation-card-label {
+    font-weight: 600;
+  }
+
+  .violation-card-desc {
+    font-size: 0.85rem;
+    color: #677D6A;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+  }
+
+  .violation-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .violation-card-type {
+    background-color: #1A3636;
+    color: #ffffff;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-weight: 500;
+  }
+
+  .violation-card-date {
+    color: #677D6A;
+  }
 
   
